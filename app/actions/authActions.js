@@ -114,7 +114,7 @@ export const signInAction = async (formData) => {
       );
 
       const getCookies = cookies();
-      getCookies.set("token", token);
+      await getCookies.set("token", token);
       return {
         success: true,
         message: "Logged In",
@@ -132,8 +132,8 @@ export const signInAction = async (formData) => {
 export const fetchAction = async () => {
   try {
     await connectDB();
-    const getCookies = cookies();
-    const token = (await getCookies.get("token")?.value) || "";
+    const getCookies = await cookies();
+    const token = await getCookies.get("token")?.value || "";
     if (token === "") {
       return {
         success: false,

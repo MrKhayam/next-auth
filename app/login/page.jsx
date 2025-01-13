@@ -12,9 +12,9 @@ const page = () => {
 
     const router = useRouter();
   const handleSignIn = async (e) => {
+    e.preventDefault();
     setLoading(true);
     try {
-        e.preventDefault();
         const formData = { email, password };
 
         const result = await signInAction(formData);
