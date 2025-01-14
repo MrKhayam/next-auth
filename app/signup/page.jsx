@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import userContext from "../context/userContext";
 import toast, { Toaster } from "react-hot-toast";
 import { signUpAction } from "../actions/authActions";
