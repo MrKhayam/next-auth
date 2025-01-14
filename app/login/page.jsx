@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import userContext from "../context/userContext";
 import { signInAction } from "../actions/authActions";
 import { useRouter } from "next/navigation";
