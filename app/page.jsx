@@ -6,8 +6,8 @@ const page = async () => {
   const data = await result.data;
   return (
     <div className='text-white p-5'>
-      <h1 className='text-4xl text-white font-bold'>{data.name}</h1>
-      <p className='text-sm'>{data.email}</p>
+      <h1 className='text-4xl text-white font-bold'>Name: {data.name}</h1>
+      <p className='text-sm'>Email: {data.email}</p>
     </div>
   );
 }
