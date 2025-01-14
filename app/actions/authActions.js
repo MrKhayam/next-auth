@@ -163,5 +163,5 @@ export const fetchAction = async () => {
       message: "Something went wrong! Please try again.",
     };
   }
-};
+}
 
