@@ -1,4 +1,3 @@
-import React from 'react';
 import { fetchAction } from './actions/authActions';
 
 const page = async () => {
