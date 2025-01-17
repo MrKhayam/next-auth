@@ -8,4 +8,4 @@ const connectDB = async () => {
     console.log(`Database Connected Successfully at host: ${mongoose.connection.host}`);
 }
 
-export default connectDB
+export default connectDB;
